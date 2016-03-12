@@ -5,6 +5,6 @@ RUN gem update --system && \
     gem install compass
 
 VOLUME [ "/theme" ]
-WORKDIR "/var/www/html"
+WORKDIR "/theme"
 ENTRYPOINT [ "/usr/local/bundle/bin/compass" ]
 CMD [ "version" ]
